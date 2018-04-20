@@ -1,5 +1,10 @@
 var canvas = document.getElementById("myCanvas");
 var ctx = canvas.getContext("2d");
-ctx.font = "50px Georgia";
-ctx.fillStyle = 'white'
+ctx.font = "55px 'Nixie One', cursive";
+ctx.fillStyle = 'white';
+ctx.rect(0,0,canvas.width,canvas.height);
+ctx.shadowColor = "black";
+ctx.shadowOffsetX = 5; 
+ctx.shadowOffsetY = 5; 
+ctx.shadowBlur = 5;
 ctx.fillText("Kevin Plover",0,90);
